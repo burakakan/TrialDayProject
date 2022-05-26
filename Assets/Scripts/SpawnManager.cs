@@ -45,7 +45,7 @@ public class SpawnManager : MonoBehaviour
         seconds -= timeDecrementAtKill;
         canvas.GetComponent<UnityEngine.UI.Text>().text = "Time: " + seconds + " seconds";
 
-        if(seconds <= 0)
+        //if(seconds <= 0)
 
         if (transform.childCount == 1)
             NextWave();

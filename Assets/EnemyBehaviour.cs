@@ -1,4 +1,4 @@
-using System;
+using DG.Tweening;
 using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
@@ -8,6 +8,10 @@ public class EnemyBehaviour : MonoBehaviour
     private void Awake()
     {
         enemyContainer = transform.parent;
+    }
+    private void Start()
+    {
+       // transform.DOMove()
     }
 
     private void OnTriggerEnter(Collider other)
@@ -19,4 +23,6 @@ public class EnemyBehaviour : MonoBehaviour
             enemyContainer.GetComponent<SpawnManager>().EnemyDestroyed();
         }
     }
+
+
 }
